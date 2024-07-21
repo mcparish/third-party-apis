@@ -18,14 +18,17 @@
     #to-do {
       /* width: 100px;
       height: 100px; */
-      
+
       position: absolute;
       z-index: 2;
-      padding: 0.5em;
+      padding: 1.5em;
       float: left;
       margin: 10px 10px 10px 0;
+      height: 575px;
+      width: 375px;
+
     }
-  
+
     #in-progress {
       width: 25%;
       height: 60vh;
@@ -36,9 +39,9 @@
       margin: 10px;
     }
   </style>
-  
+
   <title>Task Board</title>
-  
+
 </head>
 
 <body>
@@ -67,7 +70,7 @@
                 </div>
                 <div class="col">
                   <label for="task-title">Task Due Date</label>
-                  <input id="task-due-date" type="text" class="form-control">
+                  <input id="task-due-date" type="button" class="form-control">
                 </div>
 
               </div>
@@ -84,7 +87,7 @@
         </div>
       </div>
     </div>
-<!-- <div id="draggable" class="ui-widget-content">
+    <!-- <div id="draggable" class="ui-widget-content">
   <p>Drag me to my target</p>
 </div>
 
@@ -133,19 +136,19 @@
   <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-<script>
-  $(function () {
-    $("#draggable").draggable();
-    $("#droppable").droppable({
-      drop: function (event, ui) {
-        $(this)
-          .addClass("ui-state-highlight")
-          .find("p")
-          .html("Dropped!");
-      }
+  <script>
+    $(function () {
+      $("#draggable").draggable();
+      $("#droppable").droppable({
+        drop: function (event, ui) {
+          $(this)
+            .addClass("ui-state-highlight")
+            .find("p")
+            .html("Dropped!");
+        }
+      });
     });
-  });
-</script>
+  </script>
   <script src="./assets/js/script.js"></script>
 </body>
 
